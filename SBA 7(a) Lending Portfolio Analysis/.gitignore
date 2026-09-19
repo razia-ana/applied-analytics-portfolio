@@ -1,0 +1,16 @@
+# Python/Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
+
+# Local database and editor files
+*.sqlite
+*.db
+.env
+.vscode/
+
+# OS files
+Thumbs.db
+desktop.ini

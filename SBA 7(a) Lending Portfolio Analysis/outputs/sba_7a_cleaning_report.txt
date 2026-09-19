@@ -1,0 +1,7 @@
+SBA 7(a) dataset cleaning report
+Rows selected and processed: 388,338
+Duplicate rows removed after standardizing text: 392
+Cleaned all-years rows: 387,946
+Complete fiscal-year rows (2020-2025): 347,145
+FY2026 is excluded from the comparable year-over-year file because it is incomplete in this extract.
+LocationID is retained as a lender-location field and is not treated as a unique loan ID.

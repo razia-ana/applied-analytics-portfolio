@@ -1,0 +1,534 @@
+{
+  "python": {
+    "cells": [
+      {
+        "cell": 0,
+        "status": "PASS"
+      },
+      {
+        "cell": 1,
+        "status": "PASS"
+      },
+      {
+        "cell": 2,
+        "status": "PASS"
+      },
+      {
+        "cell": 3,
+        "status": "PASS"
+      },
+      {
+        "cell": 4,
+        "status": "PASS"
+      },
+      {
+        "cell": 5,
+        "status": "PASS"
+      },
+      {
+        "cell": 6,
+        "status": "PASS"
+      },
+      {
+        "cell": 7,
+        "status": "PASS"
+      },
+      {
+        "cell": 8,
+        "status": "PASS"
+      },
+      {
+        "cell": 9,
+        "status": "PASS"
+      },
+      {
+        "cell": 10,
+        "status": "PASS"
+      },
+      {
+        "cell": 11,
+        "status": "PASS"
+      },
+      {
+        "cell": 12,
+        "status": "PASS"
+      },
+      {
+        "cell": 13,
+        "status": "PASS"
+      },
+      {
+        "cell": 14,
+        "status": "PASS"
+      },
+      {
+        "cell": 15,
+        "status": "PASS"
+      },
+      {
+        "cell": 16,
+        "status": "PASS"
+      }
+    ],
+    "stdout_tail": "(347145, 31)\nDuplicate rows: 83\n\nLoan status:\nLoanStatus\nEXEMPT    218836\nP I F      68076\nCANCLD     44661\nCOMMIT      8679\nCHGOFF      6893\nName: count, dtype: int64\n\nApproval fiscal years:\nApprovalFY\n2020    42205\n2021    51758\n2022    47624\n2023    57324\n2024    70209\n2025    78025\nName: count, dtype: int64\n\nMissing values:\nChargeOffDate                 340257\nPaidInFullDate                279068\nSoldSecMrktInd                238971\nBusinessAge                      186\nBusinessType                      27\nCongressionalDistrict             13\nInitialInterestRate                6\nFixedorVariableInterestInd         6\nNaicsDescription                   0\nCollateralInd                      0\ndtype: int64\n0          P I F\n1          P I F\n2          P I F\n3         EXEMPT\n4          P I F\n           ...  \n347140    CANCLD\n347141    CANCLD\n347142    EXEMPT\n347143    EXEMPT\n347144    EXEMPT\nName: LoanStatus, Length: 347145, dtype: object\nRows before: 347145\nRows after: 347145\nExact duplicate rows detected (not removed): 83\nApprovalFY\n2020    42205\n2021    51758\n2022    47624\n2023    57324\n2024    70209\n2025    78025\nName: count, dtype: Int64\n",
+    "stderr_tail": "",
+    "df_shape": [
+      347145,
+      38
+    ],
+    "df_rows": 347145,
+    "approval_year_min": 2020,
+    "approval_year_max": 2025,
+    "total_approval": 180601190600,
+    "annual": [
+      {
+        "ApprovalFY": 2020,
+        "loan_count": 42205,
+        "total_approval": 22530761300,
+        "average_loan_amount": 533841.0448998933,
+        "charge_off_rate": 0.034616751569719224,
+        "paid_in_full_rate": 0.5073806421040161,
+        "total_approval_billions": 22.5307613,
+        "charge_off_rate_pct": 3.4616751569719226
+      },
+      {
+        "ApprovalFY": 2021,
+        "loan_count": 51758,
+        "total_approval": 36490772800,
+        "average_loan_amount": 705026.7166428379,
+        "charge_off_rate": 0.02467251439391012,
+        "paid_in_full_rate": 0.3795741721086595,
+        "total_approval_billions": 36.4907728,
+        "charge_off_rate_pct": 2.467251439391012
+      },
+      {
+        "ApprovalFY": 2022,
+        "loan_count": 47624,
+        "total_approval": 25678079000,
+        "average_loan_amount": 539183.5839072736,
+        "charge_off_rate": 0.03582227448345372,
+        "paid_in_full_rate": 0.23460860070552664,
+        "total_approval_billions": 25.678079,
+        "charge_off_rate_pct": 3.5822274483453724
+      },
+      {
+        "ApprovalFY": 2023,
+        "loan_count": 57324,
+        "total_approval": 27500401100,
+        "average_loan_amount": 479736.2553206336,
+        "charge_off_rate": 0.030266555020584746,
+        "paid_in_full_rate": 0.14369199637150235,
+        "total_approval_billions": 27.5004011,
+        "charge_off_rate_pct": 3.0266555020584747
+      },
+      {
+        "ApprovalFY": 2024,
+        "loan_count": 70209,
+        "total_approval": 31121143700,
+        "average_loan_amount": 443264.30657038273,
+        "charge_off_rate": 0.008958965374809497,
+        "paid_in_full_rate": 0.07819510319189847,
+        "total_approval_billions": 31.1211437,
+        "charge_off_rate_pct": 0.8958965374809497
+      },
+      {
+        "ApprovalFY": 2025,
+        "loan_count": 78025,
+        "total_approval": 37280032700,
+        "average_loan_amount": 477795.997436719,
+        "charge_off_rate": 0.0010893944248638258,
+        "paid_in_full_rate": 0.027119512976610062,
+        "total_approval_billions": 37.2800327,
+        "charge_off_rate_pct": 0.10893944248638258
+      }
+    ],
+    "state_top10": [
+      {
+        "BorrState": "CA",
+        "loan_count": 40104,
+        "total_approval": 25462768900,
+        "average_loan": 634918.4345701177,
+        "charge_off_rate": 0.020671254737682027
+      },
+      {
+        "BorrState": "TX",
+        "loan_count": 26271,
+        "total_approval": 19203017000,
+        "average_loan": 730958.7377716874,
+        "charge_off_rate": 0.02112595637775494
+      },
+      {
+        "BorrState": "FL",
+        "loan_count": 25651,
+        "total_approval": 14292468000,
+        "average_loan": 557189.5052824451,
+        "charge_off_rate": 0.028380959806635218
+      },
+      {
+        "BorrState": "GA",
+        "loan_count": 10454,
+        "total_approval": 8034686400,
+        "average_loan": 768575.3204515019,
+        "charge_off_rate": 0.01664434666156495
+      },
+      {
+        "BorrState": "NY",
+        "loan_count": 21507,
+        "total_approval": 7954463800,
+        "average_loan": 369854.64267447806,
+        "charge_off_rate": 0.03780164597572883
+      },
+      {
+        "BorrState": "IL",
+        "loan_count": 12061,
+        "total_approval": 6385220400,
+        "average_loan": 529410.5298068153,
+        "charge_off_rate": 0.01882099328413896
+      },
+      {
+        "BorrState": "OH",
+        "loan_count": 20159,
+        "total_approval": 6328099200,
+        "average_loan": 313909.38042561634,
+        "charge_off_rate": 0.016617887792053178
+      },
+      {
+        "BorrState": "CO",
+        "loan_count": 9166,
+        "total_approval": 5630568000,
+        "average_loan": 614288.4573423521,
+        "charge_off_rate": 0.01920139646519747
+      },
+      {
+        "BorrState": "NC",
+        "loan_count": 7856,
+        "total_approval": 5583575100,
+        "average_loan": 710740.2113034623,
+        "charge_off_rate": 0.011965376782077392
+      },
+      {
+        "BorrState": "WA",
+        "loan_count": 9423,
+        "total_approval": 5583248100,
+        "average_loan": 592512.7984718243,
+        "charge_off_rate": 0.013689907672715695
+      }
+    ],
+    "lender_top10": [
+      {
+        "BankName": "Live Oak Banking Company",
+        "loan_count": 8709,
+        "total_approval": 12216563500,
+        "average_loan": 1402751.5788265013,
+        "charge_off_rate": 0.005396716040877253
+      },
+      {
+        "BankName": "The Huntington National Bank",
+        "loan_count": 40123,
+        "total_approval": 9975705600,
+        "average_loan": 248628.10856615906,
+        "charge_off_rate": 0.017197118859507015
+      },
+      {
+        "BankName": "Newtek Bank, National Association",
+        "loan_count": 9907,
+        "total_approval": 4682019200,
+        "average_loan": 472597.07277682447,
+        "charge_off_rate": 0.0002018774603815484
+      },
+      {
+        "BankName": "Readycap Lending, LLC",
+        "loan_count": 9217,
+        "total_approval": 4044456100,
+        "average_loan": 438803.9600737767,
+        "charge_off_rate": 0.01106650754041445
+      },
+      {
+        "BankName": "U.S. Bank, National Association",
+        "loan_count": 15653,
+        "total_approval": 3821221300,
+        "average_loan": 244120.69890755767,
+        "charge_off_rate": 0.029004024787580657
+      },
+      {
+        "BankName": "Celtic Bank Corporation",
+        "loan_count": 4870,
+        "total_approval": 3510289700,
+        "average_loan": 720798.7063655031,
+        "charge_off_rate": 0.015605749486652977
+      },
+      {
+        "BankName": "Byline Bank",
+        "loan_count": 2722,
+        "total_approval": 3346857000,
+        "average_loan": 1229558.0455547392,
+        "charge_off_rate": 0.010286554004408524
+      },
+      {
+        "BankName": "Wells Fargo Bank National Association",
+        "loan_count": 11619,
+        "total_approval": 3077319500,
+        "average_loan": 264852.35390308977,
+        "charge_off_rate": 0.055512522592305706
+      },
+      {
+        "BankName": "Newtek Small Business Finance, Inc.",
+        "loan_count": 4437,
+        "total_approval": 2887713200,
+        "average_loan": 650825.6028848321,
+        "charge_off_rate": 0.007662835249042145
+      },
+      {
+        "BankName": "TD Bank, National Association",
+        "loan_count": 16240,
+        "total_approval": 2393770900,
+        "average_loan": 147399.68596059113,
+        "charge_off_rate": 0.06385467980295567
+      }
+    ],
+    "industry_top10": [
+      {
+        "NaicsDescription": "Hotels (except Casino Hotels) and Motels",
+        "loan_count": 5068,
+        "total_approval": 12585412800,
+        "average_loan": 2483309.55011839
+      },
+      {
+        "NaicsDescription": "Full-Service Restaurants",
+        "loan_count": 15956,
+        "total_approval": 8375254600,
+        "average_loan": 524896.8789170218
+      },
+      {
+        "NaicsDescription": "Gasoline Stations with Convenience Stores",
+        "loan_count": 3803,
+        "total_approval": 5902461200,
+        "average_loan": 1552053.957402051
+      },
+      {
+        "NaicsDescription": "Limited-Service Restaurants",
+        "loan_count": 11669,
+        "total_approval": 5491186500,
+        "average_loan": 470579.0127688748
+      },
+      {
+        "NaicsDescription": "Offices of Dentists",
+        "loan_count": 3955,
+        "total_approval": 3605278400,
+        "average_loan": 911574.816687737
+      },
+      {
+        "NaicsDescription": "All Other Specialty Trade Contractors",
+        "loan_count": 5684,
+        "total_approval": 2697800700,
+        "average_loan": 474630.66502463055
+      },
+      {
+        "NaicsDescription": "Fitness and Recreational Sports Centers",
+        "loan_count": 6515,
+        "total_approval": 2658725800,
+        "average_loan": 408092.98541826557
+      },
+      {
+        "NaicsDescription": "Plumbing, Heating, and Air-Conditioning Contractors",
+        "loan_count": 5936,
+        "total_approval": 2595824500,
+        "average_loan": 437301.97102425876
+      },
+      {
+        "NaicsDescription": "Child Care Services",
+        "loan_count": 3416,
+        "total_approval": 2539553000,
+        "average_loan": 743428.8641686182
+      },
+      {
+        "NaicsDescription": "General Automotive Repair",
+        "loan_count": 5263,
+        "total_approval": 2514798900,
+        "average_loan": 477826.1257837735
+      }
+    ],
+    "outcome": [
+      {
+        "LoanStatus": "CANCLD",
+        "loans": 44661,
+        "total_approval": 21391247500,
+        "loan_share_pct": 12.86522922698008
+      },
+      {
+        "LoanStatus": "CHGOFF",
+        "loans": 6893,
+        "total_approval": 1141438800,
+        "loan_share_pct": 1.985625603134137
+      },
+      {
+        "LoanStatus": "COMMIT",
+        "loans": 8679,
+        "total_approval": 1384899200,
+        "loan_share_pct": 2.500108024024543
+      },
+      {
+        "LoanStatus": "EXEMPT",
+        "loans": 218836,
+        "total_approval": 119719867500,
+        "loan_share_pct": 63.03878782641259
+      },
+      {
+        "LoanStatus": "P I F",
+        "loans": 68076,
+        "total_approval": 36963737600,
+        "loan_share_pct": 19.610249319448645
+      }
+    ]
+  },
+  "csv": {
+    "path": "C:\\Users\\rajia\\Documents\\Codex\\2026-09-08\\1-finance-branch-closure-early-warning\\outputs\\sba_7a_complete_fy_2020_2025.csv",
+    "rows": 347145,
+    "columns": 49,
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "total_approval": 180601190600,
+    "unique_ids": 347145
+  },
+  "sql": {
+    "path": "C:\\analytics\\projects\\piit\\Projects\\SBA_Lending_Requirement_Analysis.sql",
+    "bytes": 5124,
+    "has_create_database": true,
+    "has_create_table": true,
+    "has_load_data": false,
+    "load_files": [],
+    "query_count": 12,
+    "has_basic_quality_query": true,
+    "has_annual_query": true
+  },
+  "tableau": {
+    "path": "C:\\analytics\\projects\\piit\\Projects\\SBA_7a_Portfolio_Complete.twbx",
+    "exists": true,
+    "size": 18036492,
+    "members": 2,
+    "twb_members": [
+      "SBA_7a_Portfolio_Complete.twb"
+    ],
+    "workbook_names": [],
+    "datasources": [],
+    "has_sba": true,
+    "dashboards": [
+      "01 Portfolio Pulse",
+      "02 Reach &amp; Borrowers",
+      "03 Lender Landscape",
+      "04 Loan Outcomes",
+      "START HERE • Portfolio Story"
+    ],
+    "worksheets": [
+      "Approvals by fiscal year",
+      "Average approval by fiscal year",
+      "Borrowers by business age",
+      "Borrowers by business type",
+      "Charge-offs by fiscal year",
+      "Loan count by fiscal year",
+      "Loan status mix",
+      "Paid in full by fiscal year",
+      "Top 15 industries by approval",
+      "Top 15 lenders by approval",
+      "Top 15 lenders by loan count",
+      "Top 15 project states by approval"
+    ],
+    "extracts": [
+      "Data/TableauTemp/#TableauTemp_156vogx07r2jbs1akvh9k1y3qykr.hyper"
+    ]
+  },
+  "tableau_summary_checks": [
+    {
+      "file": "tableau_annual_summary.csv",
+      "rows": 6,
+      "max_abs_difference": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "file": "tableau_state_summary.csv",
+      "rows": 54,
+      "max_abs_difference": 5.820766091346741e-11,
+      "pass": true
+    },
+    {
+      "file": "tableau_lender_summary.csv",
+      "rows": 2148,
+      "max_abs_difference": 4.656612873077393e-10,
+      "pass": true
+    },
+    {
+      "file": "tableau_industry_summary.csv",
+      "rows": 1127,
+      "max_abs_difference": 4.656612873077393e-10,
+      "pass": true
+    },
+    {
+      "file": "tableau_status_summary.csv",
+      "rows": 5,
+      "max_abs_difference": 0,
+      "pass": true
+    }
+  ],
+  "comparisons": [
+    {
+      "check": "python_rows_vs_clean_csv",
+      "pass": true,
+      "python": 347145,
+      "csv": 347145
+    },
+    {
+      "check": "python_total_vs_clean_csv",
+      "pass": true,
+      "python": 180601190600,
+      "csv": 180601190600
+    },
+    {
+      "check": "python_year_range_vs_clean_csv",
+      "pass": true,
+      "python": [
+        2020,
+        2025
+      ],
+      "csv": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "check": "tableau_contains_sba_fields",
+      "pass": true
+    },
+    {
+      "check": "tableau_has_extract_or_datasource",
+      "pass": true
+    },
+    {
+      "check": "sql_has_core_queries",
+      "pass": true
+    },
+    {
+      "check": "tableau_summary_csvs_match_clean_csv",
+      "pass": true
+    }
+  ],
+  "green_light": true,
+  "live_mysql": {
+    "status": "VERIFIED",
+    "rows_loaded": 347145,
+    "unique_ids": 347145,
+    "first_year": 2020,
+    "last_year": 2025,
+    "total_approved_dollars": 180601190600
+  },
+  "artifact_green_light": true
+}
