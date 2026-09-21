@@ -1,34 +1,55 @@
 # Applied Analytics Portfolio
 
-This repository contains practical data-analysis projects built with Python, SQL/MySQL, and Tableau. The first project is an SBA 7(a) loan portfolio analysis for fiscal years 2020–2025. More projects can be added as new top-level folders, such as `customer-churn/`, `sales-analysis/`, or `public-health/`.
+Practical, business-focused analytics projects using Python, SQL/MySQL, and Tableau.
 
-## Current project: SBA 7(a) loan portfolio analysis
+## Featured project
 
-- `notebooks/SBA_Loan_Analysis.ipynb` — Python cleaning and analysis
-- `sql/SBA_Lending_Requirement_Analysis.sql` — MySQL table and analysis queries
-- `sql/sba_7a_analysis.sql` — supporting SQL analysis script
-- `tableau/SBA_7a_Portfolio_Complete.twbx` — Tableau workbook
-- `data/sba_7a_complete_fy_2020_2025_sample.csv` — 5,000-row sample for easy repository browsing
-- `outputs/` — audit report and summary tables used by Tableau
-- `docs/` — presentation guide and notes
+### SBA 7(a) Lending Portfolio Analysis
 
-## Quick start
+**Business question:** What can lending trends, borrower outcomes, geography, industry, and loan size tell us about the SBA 7(a) portfolio from fiscal years 2020–2025?
 
-1. Open the notebook in Jupyter and run the cells from top to bottom.
-2. Create a MySQL database and run the SQL script. Update the CSV path for your computer.
-3. Open the `.twbx` file in Tableau Public or Tableau Desktop.
-4. Use the audit report to compare row counts, years, unique IDs, and total approved dollars.
+**Why it matters:** A lender or program manager can use these findings to understand funding patterns, monitor outcomes, and identify areas that deserve closer review.
 
-## Audit control totals
+**Tools:** Python (`pandas`, Jupyter), MySQL, Tableau, Git/GitHub
 
-- Rows: 347,145
-- Unique loan records: 347,145
-- Fiscal years: 2020–2025
-- Total gross approval: $180,601,190,600.00
+**Control totals:** 347,145 loan records, 347,145 unique record IDs, fiscal years 2020–2025, and $180.6 billion in gross approvals.
 
-The complete cleaned CSV is provided in the separate ZIP package. It is larger than GitHub's normal 100 MB single-file limit, so this GitHub repository uses a 5,000-row sample. If you later need the full file online, use Git LFS or a GitHub release/artifact.
+## What this project demonstrates
+
+- Cleaning and validating a large public dataset
+- Creating useful fields such as approval year, quarter, guarantee percentage, and outcome flags
+- Writing SQL for loading, quality checks, grouping, ranking, and trend analysis
+- Building Tableau dashboards for non-technical stakeholders
+- Comparing results across Python, MySQL, and Tableau
+- Documenting assumptions, limitations, and reproducibility steps
+
+## Repository guide
+
+| Folder | Contents |
+|---|---|
+| `notebooks/` | Python cleaning and exploratory analysis notebook |
+| `sql/` | MySQL table setup and analytical queries |
+| `tableau/` | Tableau packaged workbook (`.twbx`) |
+| `data/` | Small sample dataset for repository browsing |
+| `outputs/` | Audit report and Tableau-ready summary tables |
+| `docs/` | Presentation and interview notes |
+
+## How to reproduce the analysis
+
+1. Open `notebooks/SBA_Loan_Analysis.ipynb` in Jupyter and run the cells from top to bottom.
+2. Load the cleaned sample or full local dataset into MySQL and run the scripts in `sql/`.
+3. Open `tableau/SBA_7a_Portfolio_Complete.twbx` in Tableau Public or Tableau Desktop.
+4. Compare the row count, unique ID count, year range, and approval total with the audit report.
+
+## Data note
+
+The repository contains a 5,000-row sample because the full cleaned CSV is larger than GitHub's normal 100 MB single-file limit. The complete file is kept separately for local analysis. Use Git LFS or a release artifact if the full file must be hosted online.
 
 ## Data source
 
-U.S. Small Business Administration 7(a) loan data. This project is for learning and portfolio demonstration; confirm the source terms before redistributing the raw data.
+U.S. Small Business Administration 7(a) loan data. This repository is an educational portfolio project. Please review the source terms before redistributing the raw data.
+
+## Planned projects
+
+Additional folders will be added for future analytics projects, such as customer behavior, sales performance, operations, and public-sector data.
 
